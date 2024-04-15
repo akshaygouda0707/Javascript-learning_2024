@@ -45,7 +45,7 @@ let max=a>b?a:b;
 console.log(`${max}`);
 ```
 - Fizbuzz problem
-```
+```javascript
 let num=10;
 
 if(num%3===0&&num%5===0){
