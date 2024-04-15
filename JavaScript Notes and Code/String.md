@@ -6,7 +6,7 @@
 # String
 The String object is used to represent and manipulate a sequence of characters.
 
-```
+```javascript
 let name="Akshay";
 console.log(typeof name);
 console.log(name[0]);
@@ -16,7 +16,7 @@ console.log(name.charAt(7))
 ```
 
 Output:
-```
+```javascript
 string
 A
 A
@@ -30,29 +30,29 @@ undefined
 It is used to get the character at the perticular index.
 
 - syntax
-```
+```javascript
 variableName.charAt(index);
 ```
-```
+```javascript
 let counrty="India";
 console.log(counrty.charAt(3));
 ```
 - toUpperCase
 
 syntax:
-```
+```javascript
 variableName.toUpperCase();
 ```
 - toLowerCase
 
 syntax:
-```
+```javascript
 variableName.toLowerCase();
 ```
 - includes
 
 It will check if the given charcharter or string value is prenet in our variable.If present  return true else return false.
-```
+```javascript
 let msg="Hello my name is Akshay";
 console.log(msg.includes("Akshay"));
 console.log(msg.includes("Raj"));
@@ -67,7 +67,7 @@ false
 
 it will check whether the given sting is starts or ends with the value given to that function or not.
 
-```
+```javascript
 let msg="Hello my name is Akshay";
 console.log(msg.endsWith("Aks"));
 console.log(msg.startsWith("Hi"));
@@ -78,7 +78,7 @@ console.log(msg.startsWith("Hi"));
 - search,IndexOf
 It will search for the element when it is found written the index.
 
-```
+```javascript
 let mymsg="hi my name is hi AK";
 console.log(mymsg.search("hi"));
 console.log(mymsg.indexOf("hi"));
@@ -86,7 +86,7 @@ console.log(mymsg.indexOf("hi"));
 - lastIndexOf
 
 It will search for the last index of the elment
-```
+```javascript
 let mymsg="hi my name is hi AK";
 console.log(mymsg.lastIndexOf("hi"));
 
@@ -97,7 +97,7 @@ output:
 - toString
 convert number into String.
 
-```
+```javascript
 let num=123;
 console.log(num.toString());
 console.log(typeof num.toString());
@@ -106,7 +106,7 @@ console.log(typeof num.toString());
 
 It is used to concatination operation.It is possible only when of the varaible is String .
 
-```
+```javascript
 let num1=10;
 let num2=10;
 console.log(num1.toString().concat(num2));
@@ -120,18 +120,18 @@ console.log(name.concat(sname));
 - split
 used to split the string to an array.
 
-```
+```javascript
 let msgs="Hi Akshay where are u from";
 console.log(msgs.split(" "));
 ```
-```
+```javascript
 output:
 [ 'Hi', 'Akshay', 'where', 'are', 'u', 'from' ]
 ```
-```
+```javascript
 console.log(msgs.split(""));
 ```
-```
+```javascript
 Output:
 [
   'H', 'i', ' ', 'A', 'k', 's',
@@ -141,10 +141,10 @@ Output:
   'o', 'm'
 ]
 ```
-```
+```javascript
 console.log(" ,");
 ```
-```
+```javascript
 output:
 [ 'Hi Akshay where are u from' ]
 ```
@@ -155,13 +155,13 @@ It will be used to get the perticular part of the sting.
 
 In below example..2nd parametere treated as index
 
-```
+```javascript
 let msgs="Hi Akshay where are u from";
 console.log(msgs.slice(0,7));
 console.log(msgs.slice(2));
 console.log(msgs.subString(0,3));
 ```
-```
+```javascript
 output:
 Hi Aksh
  Akshay where are u from
