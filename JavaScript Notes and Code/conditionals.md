@@ -7,7 +7,7 @@
 Use if to specify a block of code to be executed, if a specified condition is true · Use else to specify a block of code to be executed.
 
 * if else :
-```
+```javascript
 let num1=20;
 let num2=30;
 if(num1>num2){
@@ -19,7 +19,7 @@ if(num1>num2){
 }
 ```
 - switch case:
-```
+```javascript
 const prompt=require('prompt-sync')();
 let year=1;
 switch(year){
@@ -38,7 +38,7 @@ switch(year){
 ```
 - Ternary operator
 It is an update version of if else statement.
-```
+```javascript
 let a=20;
 let b=30;
 let max=a>b?a:b;
@@ -63,7 +63,7 @@ else{
 }
 ```
 * Using ternory operator
-```
+```javascript
 console.log(
     num%3===0&&num%5===0?"fizbuz":
     num%5===0?"buzz":
