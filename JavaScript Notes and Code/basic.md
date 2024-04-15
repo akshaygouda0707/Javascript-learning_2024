@@ -11,7 +11,7 @@
 
 Ex-1:
 
-```
+```javascript
 const  foo= () =>{
 console.log("hello");
 }
@@ -19,12 +19,12 @@ foo() //Invoke the function with variable.
 ```
 
 Ex-2:funtion as an agrument to another function.
-```
+```javascript
 funtion sayHelo(){
     return "hello,"
 }
 ```
-```
+```javascript
 funtion greet(helloMsg,name){
     console.log(helloMsg()+name);
 }
@@ -34,7 +34,7 @@ greet(sayHelo,"javascript");
 
 
 Ex-3: return funtion inside funtion
-```
+```javascript
 function Hello(){
     return ()=>{
         console.log("Hello");
