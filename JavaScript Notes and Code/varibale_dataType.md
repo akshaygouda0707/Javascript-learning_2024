@@ -7,7 +7,7 @@
 It is a name of the memory location where the value is going to be stored.
 
 - syntax:
-```
+```javascript
 keyword variableName=value;
 var name="Akshay";
 ```
@@ -17,7 +17,7 @@ price=300;
 ```
 The value assigned to the let keyword can be changed.
 
-```
+```javascript
 const name="Akshay";
 name="Hello";
 ```
@@ -31,7 +31,7 @@ It is nothing but a type of value assingned to the Variable.
 In javascrtipt 'typeof' operator will be used to identify which type of data is assigned to the variable.
 
 Ex 1:
-```
+```javascript
 let name="Akshay";
 console.log(typeof name);//String
 let age=24;
@@ -47,7 +47,7 @@ console.log(typeof selctColor);//object
 
 - Object:
 It is a collection of properties.These properties assosiated with name(key) and value.
-```
+```javascript
 let user={
     name:"Akshay",
     age:24,
@@ -57,14 +57,14 @@ let user={
 console.log(user);
 ```
 if you want to get a perticcular value in the object use varibale name followed by .key.
-```
+```javascript
 console.log(user.name);//Akshay
 console.log(user['age']);//24
 ```
 * Reference type-Array(basic).
 
 array:It is a collection of one or more data item in it.
-```
+```javascript
 let friends=['akshay','ajay','ajith'];
 console.log(friends);
 console.log(typeof friends);
@@ -76,7 +76,7 @@ console.log(friends[0],",",friends[1]);
 It is a block of code it will be execute some output when it is called.
 
 Ex 1:
-```
+```javascript
 function hey(){
     console.log("Hi Akshay");
 }
@@ -84,14 +84,14 @@ hey();
 hey();
 ```
 Ex 2:
-```
+```javascript
 function calSum(num1,num2){
     console.log(`sum of `+num1+` and `+num2+` is: `,num1+num2);
 }
 calSum(10,20);
 ```
 Ex 3:
-```
+```javascript
 function cali(num1,num2){
     return num1+num2;
 }
@@ -105,12 +105,12 @@ console.log(ans);//It will print 30.
 These uses backtick(`) instead of using single or double quotes.it will be very helpful while printing the sentences.
 
 - ${variableName}---This will be used to acces the value inside the literals.(Important)
-```
+```javascript
 let name="Akshay";
 console.log(`my name is ${name}`);
 ```
 - Excersise-creat an obejct wid diff property
-```
+```javascript
 let person={
     user:{
         name:'Gowda',
