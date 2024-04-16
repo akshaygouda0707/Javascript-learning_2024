@@ -913,6 +913,208 @@ let multi=(...args)=>{
 console.log(multi(2,3,4,5));
 
 ```
+# Array
+In JavaScript, an array is one of the most commonly used data types. It stores multiple values and elements in one variable. These values can be of any data type — meaning you can store a string, number, boolean, and other data types in one variable.
+
+```js
+let friends=['Akshay','Ajay','Aj',5,6];
+console.log(friends)
+console.log(friends[0]);
+```
+
+### Adding
+- We can easily add the element at the begining of the array using `unshift` and end of the array using `push` operator and for the perticular index using  `splice` operator only when the deletecount will be `0` means `.splice(3,0)` where `0` is the position of delete count and it is also used for deleting when we specify the delete count value .
+
+```js
+const num=[12,44,55];
+num.unshift(9,10,11);
+num.push(60,70);
+num.splice(1,0,13,14,15);
+console.log(num);
+```
+
+### Remove the element
+
+```js
+const number=[1,2,3,4,5,6,7,8];
+number.shift();
+number.pop();
+number.splice(2,2);
+console.log(number);
+```
+### Finding the element primitive type
+Use `.inlcudes(3,4)` here 4 represent, start searching from the 4th index , `.indexof()` and `lastindexof()` .
+
+```js
+
+const num=[1,2,3,4,5,2,6,7,8];
+console.log(num.includes(3,4));
+console.log(num.indexOf(2));
+console.log(num.lastIndexOf(2));
+```
+
+###  Finding Elements (Reference Type)
+
+We can find the obejct in the array using `find` function.
+```js
+const doctors=[
+    {name:'Akshay',age:40},
+    {name:"Ajay",age:42},
+];
+
+const result=doctors.find((doctor)=>{
+    return doctor.name==='Akshay';
+});
+console.log(result);
+```
+
+### Itterating the Array
+
+```js
+const num=[1,2,3,4,5,6];
+for(let i=0;i<num.length;i++){
+    console.log(i,num[i]);
+}
+
+//Get the index
+for(let nums in num){
+    console.log(nums);
+}
+//Get the values
+for(let nums of num){
+    console.log(nums);
+}
+```
+
+### Sorting and Reversing an Array
+ex 1:
+```js
+const num=[2,1,2,4,8,9,0,7];
+num.sort();
+console.log(num.reverse());
+```
+
+ex 2;
+```js
+const doctors=[
+    {name:'Akshay',age:43},
+    {name:"Ajay",age:42},
+];
+doctors.sort((d1,d2)=>{
+if(d1.age>d2.age) return +1;
+if(d1.age===d2.age) return 0;
+if(d1.age<d2.age) return -1;
+}).reverse();
+
+console.log(doctors);
+```
+### Testing the elements of the Array(Every,Some)
+- `every` checks the everything in an array shoud be true.
+- `some` check the condition if any one of is true return true.
+
+```js
+let n=[1,2,-1,3,5,6];
+const data=n.every((num)=>{
+return num>0;
+});
+console.log(data);
+
+const d=n.some((num)=>{
+    return num>0;
+    });
+    console.log(d);
+```
+### Combining and Slicing the Array
+
+- Concat 
+- slice
+
+```js
+const num1=[1,2,3,4,5,6];
+const num2=[6,7,8,9];
+const num=num1.concat(num2);
+console.log(num);
+
+const slicArry=num.slice(3,7);
+console.log(slicArry);
+```
+###  Spread Operators
+`...` using these you can easily spread the array
+
+```js
+   const arr=[1,2,3,5,6,7];
+   console.log(...arr);
+   const copyarr=[...arr];
+   console.log(copyarr);
+``` 
+###  Joining Array
+It return array to string .
+
+```js
+  let n1=[1,2,3,4,5];
+  let joinArr=n1.join("-");
+  console.log(joinArr);
+```
+### Map
+
+ex 1:
+```js
+let n2=[1,2,3,4,5];
+  let mulbyTwo=[];
+  for(let num of n2){
+    mulbyTwo.push(num*2);
+  }
+  console.log(mulbyTwo);
+```
+
+ex 2:optimize.
+```js
+let num5=[1,2,3,4,5];
+  const mul=num5.map((num)=>{
+    return num*2;
+  })
+  console.log(mul);
+```
+
+### filter
+
+```js
+ const f1=[1,2,3,4,5,6];
+ const f2=[];
+ //even
+ for(let num of f1){
+    if(num%2===0){
+        f2.push(num);
+    }
+ }
+ //odd
+ console.log(f2);
+ const even=f1.filter((num)=>{
+    return num%2!==0;
+ });
+ console.log(even);
+
+ ```
+ ### Reduce Array
+`.reduce` 
+
+ex1:
+```js
+let reduce=[10,20,30];
+let sum=0;
+for(let num of reduce){
+    sum+=num;
+}
+console.log(sum);
+```
+Ex 2:Using `.reduce`.
+```js
+const ReduceSum=reduce.reduce((sum,num)=>{
+    return sum+num;
+},0);
+console.log(ReduceSum);
+```
+
 
 ## 🔗 Social Links
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/akshay-g-gouda-1bb424202)
