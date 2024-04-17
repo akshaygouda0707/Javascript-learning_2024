@@ -1114,7 +1114,84 @@ const ReduceSum=reduce.reduce((sum,num)=>{
 },0);
 console.log(ReduceSum);
 ```
+# Array and object destructuring
 
+```js
+//Array Object Destructuring
+
+const user={
+    name:'Akshay',
+    age:24,
+    address:{
+        long:349.9,
+        lat:236.7,
+    },
+};
+const {name,age,address}=user;
+function option(name,age){
+    console.log(`my name  ${name} and age is ${age}`);
+}
+option(name,age);
+
+let [a,b,c]=[1,2,3];
+///console.log(`my name  ${user.name} and age is ${user.age}`);
+console.log(a,b,c);
+```
+# Set Data structure
+It cannot contain dublicate elements
+```js
+let set=new Set();
+set.add(100);
+set.add(200);
+set.add(300);
+set.add(100);
+console.log(set);
+set.delete(200);
+console.log(set);
+```
+# Data Structure: Map
+```js
+let map=new Map();
+map.set("name","Akshay");
+map.set("age",40);
+console.log(map);
+for(let el of map){
+    console.log(el);
+}
+console.log(map.has("name"));
+map.delete("age");
+console.log(map.values());
+console.log(map.keys());
+map.clear();
+console.log(map);
+```
+
+# Weak Set + Weak Map
+```js
+const obj={name:"Akshay"};
+const obj1={};
+let ws=new WeakSet();
+ws.add(obj);
+console.log(ws);
+//weak map
+let map=new WeakMap();
+map.set(obj,123);
+console.log(map.get(obj));
+map.delete();
+```
+# padStart, padEnd ,TrimStart, TrimEnd
+
+`Trim `is used to trim the whitespaces in line
+
+```js
+let num='4';
+let name="   Akshay   "
+console.log(num.padStart(4,0));
+console.log(num.padEnd(2,0));
+console.log(name.trimEnd());
+console.log(name.trim());
+console.log(name.trimStart());
+```
 
 ## 🔗 Social Links
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/akshay-g-gouda-1bb424202)
