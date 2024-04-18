@@ -1192,6 +1192,70 @@ console.log(name.trimEnd());
 console.log(name.trim());
 console.log(name.trimStart());
 ```
+# Errors in javascript
+- Syntax error
+```js
+let fun js=true
+```
+```js
+SyntaxError: Unexpected identifier 'js'
+```
+- reference error
+
+```js
+console.log(hello);
+```
+```js
+ReferenceError: hello is not defined
+```
+- TypeError
+```js
+let num=123;
+console.log(num.toUpperCase());
+```
+```js
+TypeError: num.toUpperCase is not a function
+```
+- RangeError
+```js
+let pi=3.14;
+console.log(pi.tofixed(101));
+```
+```js
+RangeError: toFixed() digits argument must be between 0 and 100
+```
+
+# Throws custom exception
+
+```js
+function div(a,b){
+    if(b==0){
+        throw "Uncaught exception";
+    }
+    return a/b;
+}
+console.log(div(4,0));
+```
+# handle Error with try,catch,finally block
+
+```js
+function div(a,b){
+    if(b==0){
+        throw "Uncaught exception";
+    }
+    return a/b;
+}
+try{
+    console.log(div(4,1));
+}
+catch(e){
+    console.log(e);
+}
+finally{
+    console.log("it works");
+}
+```
+
 
 ## 🔗 Social Links
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/akshay-g-gouda-1bb424202)
